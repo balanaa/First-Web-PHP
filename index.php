@@ -4,29 +4,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Login</title>
+
 </head>
 
 <body>
-    <main>
-        <form action="includes/formhandler.php" method="post">
-            <label for="firstName">First Name:</label>
-            <input type="text" id="firstName" name="firstName" required><br><br>
-            <label for="lastName">Last Name:</label>
-            <input type="text" id="lastName" name="lastName" required><br><br>
+    <div class="box">
+        <div class="container">
+            <div class="top-header">
+                <span>Have an account?</span>
+                <header>Login</header>
+            </div>
 
-            <label for="favouriteFruit">Favourite Fruit:</label>
-            <select name="favouriteFruit" id="favouriteFruit" required>
-                <option value="banana">Banana</option>
-                <option value="apple">Apple</option>
-                <option value="mango">Mango</option>
-                <option value="ponkan">Ponkan</option>
-            </select>
+            <div class="input-field">
+                <input type="text" class="input" placeholder="Username" required>
+                <span class="material-icons icon">person</span>
+            </div>
+            <div class="input-field">
+                <input type="password" class="input" placeholder="Password" required>
+                <span class="material-icons icon">lock</span>
+            </div>
+            <div class="input-field">
+                <input type="submit" class="submit" value="Login">
+            </div>
 
-            <button type="submit">Submit</button>
-        </form>
-    </main>
-
+            <div class="bottom">
+                <div class="left">
+                    <label for="check"> Remember Me</label>
+                    <input type="checkbox" name="check" id="check">
+                </div>
+                <div class="right">
+                    <label><a href="">Forgot password?</a></label>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
